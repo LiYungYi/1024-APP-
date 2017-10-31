@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDADE7BC1FA6391D00160E0F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE7BB1FA6391D00160E0F /* ThirdViewController.swift */; };
+		FDADE7BE1FA6393B00160E0F /* AdoptInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADE7BD1FA6393B00160E0F /* AdoptInfoViewController.swift */; };
 		FDE04BA41F9F7577003C6916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE04BA31F9F7577003C6916 /* AppDelegate.swift */; };
 		FDE04BA61F9F7577003C6916 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE04BA51F9F7577003C6916 /* FirstViewController.swift */; };
 		FDE04BA81F9F7577003C6916 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE04BA71F9F7577003C6916 /* SecondViewController.swift */; };
 		FDE04BAB1F9F7577003C6916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE04BA91F9F7577003C6916 /* Main.storyboard */; };
 		FDE04BAD1F9F7577003C6916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE04BAC1F9F7577003C6916 /* Assets.xcassets */; };
 		FDE04BB01F9F7577003C6916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE04BAE1F9F7577003C6916 /* LaunchScreen.storyboard */; };
+		FDE04BB81F9F9181003C6916 /* DogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE04BB71F9F9181003C6916 /* DogDetailViewController.swift */; };
+		FDE04BBA1F9F9192003C6916 /* CatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE04BB91F9F9192003C6916 /* CatDetailViewController.swift */; };
+		FDE04BBE1F9FA9CC003C6916 /* PetItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE04BBD1F9FA9CC003C6916 /* PetItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FDADE7BB1FA6391D00160E0F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		FDADE7BD1FA6393B00160E0F /* AdoptInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptInfoViewController.swift; sourceTree = "<group>"; };
 		FDE04BA01F9F7577003C6916 /* 1024 多頁面APP畫面.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1024 多頁面APP畫面.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE04BA31F9F7577003C6916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDE04BA51F9F7577003C6916 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		FDE04BAC1F9F7577003C6916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDE04BAF1F9F7577003C6916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDE04BB11F9F7577003C6916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDE04BB71F9F9181003C6916 /* DogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailViewController.swift; sourceTree = "<group>"; };
+		FDE04BB91F9F9192003C6916 /* CatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailViewController.swift; sourceTree = "<group>"; };
+		FDE04BBD1F9FA9CC003C6916 /* PetItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,13 @@
 			children = (
 				FDE04BA31F9F7577003C6916 /* AppDelegate.swift */,
 				FDE04BA51F9F7577003C6916 /* FirstViewController.swift */,
+				FDE04BB71F9F9181003C6916 /* DogDetailViewController.swift */,
 				FDE04BA71F9F7577003C6916 /* SecondViewController.swift */,
+				FDE04BB91F9F9192003C6916 /* CatDetailViewController.swift */,
+				FDADE7BB1FA6391D00160E0F /* ThirdViewController.swift */,
+				FDADE7BD1FA6393B00160E0F /* AdoptInfoViewController.swift */,
 				FDE04BA91F9F7577003C6916 /* Main.storyboard */,
+				FDE04BBD1F9FA9CC003C6916 /* PetItems.swift */,
 				FDE04BAC1F9F7577003C6916 /* Assets.xcassets */,
 				FDE04BAE1F9F7577003C6916 /* LaunchScreen.storyboard */,
 				FDE04BB11F9F7577003C6916 /* Info.plist */,
@@ -139,7 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE04BB81F9F9181003C6916 /* DogDetailViewController.swift in Sources */,
 				FDE04BA81F9F7577003C6916 /* SecondViewController.swift in Sources */,
+				FDE04BBE1F9FA9CC003C6916 /* PetItems.swift in Sources */,
+				FDADE7BE1FA6393B00160E0F /* AdoptInfoViewController.swift in Sources */,
+				FDADE7BC1FA6391D00160E0F /* ThirdViewController.swift in Sources */,
+				FDE04BBA1F9F9192003C6916 /* CatDetailViewController.swift in Sources */,
 				FDE04BA41F9F7577003C6916 /* AppDelegate.swift in Sources */,
 				FDE04BA61F9F7577003C6916 /* FirstViewController.swift in Sources */,
 			);

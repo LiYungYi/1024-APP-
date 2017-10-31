@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -13,13 +23,71 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景圖片" translatesAutoresizingMaskIntoConstraints="NO" id="9vQ-iU-Tav">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寵物小百科" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTf-sO-kP1">
+                                <rect key="frame" x="87.5" y="75" width="200" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KTf-sO-kP1" secondAttribute="height" multiplier="40:9" id="QI7-hW-VaV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="封面" translatesAutoresizingMaskIntoConstraints="NO" id="jyI-Ci-gUj">
+                                <rect key="frame" x="0.0" y="176" width="375" height="371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jyI-Ci-gUj" secondAttribute="height" multiplier="375:371" id="qkj-6f-eTi"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vea-iX-o4V" userLabel="Bottom Help View">
+                                <rect key="frame" x="0.0" y="547" width="50" height="120"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="9gn-kw-ERj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YjU-iJ-Z7y" userLabel="Top Help View">
+                                <rect key="frame" x="0.0" y="0.0" width="124" height="75"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="scl-kN-bon"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vea-iX-o4V" firstAttribute="top" secondItem="jyI-Ci-gUj" secondAttribute="bottom" id="0As-0V-k33"/>
+                            <constraint firstItem="jyI-Ci-gUj" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="371:667" id="1ev-8C-Rg6"/>
+                            <constraint firstItem="9vQ-iU-Tav" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="66m-Zq-9S0"/>
+                            <constraint firstItem="9vQ-iU-Tav" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CZO-FP-t6n"/>
+                            <constraint firstItem="Vea-iX-o4V" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="120:667" id="Dpm-2l-Vhj"/>
+                            <constraint firstItem="9vQ-iU-Tav" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FNG-EL-ZKw"/>
+                            <constraint firstItem="Vea-iX-o4V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jfc-NI-THa"/>
+                            <constraint firstItem="9vQ-iU-Tav" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JuF-Jz-tzh"/>
+                            <constraint firstItem="9vQ-iU-Tav" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ld0-oN-I6A"/>
+                            <constraint firstItem="jyI-Ci-gUj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ouj-qw-xtp"/>
+                            <constraint firstItem="YjU-iJ-Z7y" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="PeE-z2-meh"/>
+                            <constraint firstItem="9vQ-iU-Tav" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="SiX-KM-C9K"/>
+                            <constraint firstItem="KTf-sO-kP1" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="45:667" id="byp-rD-EXi"/>
+                            <constraint firstItem="KTf-sO-kP1" firstAttribute="top" secondItem="YjU-iJ-Z7y" secondAttribute="bottom" id="cUW-U8-75R"/>
+                            <constraint firstItem="Vea-iX-o4V" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="gGj-jv-5bL"/>
+                            <constraint firstItem="KTf-sO-kP1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gR3-KA-1eA"/>
+                            <constraint firstItem="YjU-iJ-Z7y" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="i4S-8c-etR"/>
+                            <constraint firstItem="YjU-iJ-Z7y" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="75:667" id="zPq-LS-JUs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="封面" width="497" height="378"/>
+        <image name="背景圖片" width="666" height="666"/>
+    </resources>
 </document>
